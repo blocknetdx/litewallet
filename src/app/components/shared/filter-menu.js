@@ -13,7 +13,7 @@ const FilterMenu = ({ items = [], active = false, onClick = () => {} }) => {
         {items
           .map(({ id, text, image }) => {
             return (
-              <button className={'lw-sidebar-filterable-list-item'} key={id} onClick={() => onClick(id)}><img alt={Localize.text('Coin logo', 'sidebar')} srcSet={image} />{text}</button>
+              <button className={'lw-sidebar-filterable-list-item'} key={id} onClick={() => onClick(id)}><img alt={Localize.text('Coin logo', 'sidebar')} src={image} />{text}</button>
             );
           })}
       </PerfectScrollbar>

@@ -47,10 +47,10 @@ const TransactionDetailModal = ({ altCurrency, currencyMultipliers, openExternal
       <ModalBody className={'lw-modal-transaction-body'}>
         <Row justify={'center'}>
           <img alt={Localize.text('Transaction icon', 'transactions')}
-               srcSet={(selectedTx.tx.isSend() ?
-                 `${publicPath}/images/icons/icon-sent-large.png, ${publicPath}/images/icons/icon-sent-large@2x.png 2x, ${publicPath}/images/icons/icon-sent-large@3x.png 3x`
+               src={(selectedTx.tx.isSend() ?
+                 `${publicPath}/images/icons/icon-sent-large.png`
                  :
-                 `${publicPath}/images/icons/icon-received-large.png, ${publicPath}/images/icons/icon-received-large@2x.png 2x, ${publicPath}/images/icons/icon-received-large@3x.png 3x`
+                 `${publicPath}/images/icons/icon-received-large.png`
                )}
                className={'lw-modal-transaction-image'} />
         </Row>

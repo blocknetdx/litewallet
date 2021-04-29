@@ -46,7 +46,7 @@ let Balance = ({ showCoinDetails = false, activeWallet, altCurrency, wallets, ba
         <div style={{display: 'inline-block'}}>
           <div>
             <div style={{float: 'left'}}>
-              <img alt={Localize.text('{{coin}} image', 'balance', {coin: wallet.ticker})} srcSet={wallet.imagePath} style={{width: 32, height: 32}} />
+              <img alt={Localize.text('{{coin}} image', 'balance', {coin: wallet.ticker})} src={wallet.imagePath} style={{width: 32, height: 32}} />
             </div>
             <div style={{display: 'inline-block', paddingLeft: 10, clear: 'left'}}>
               <h3 style={{fontSize: 24, lineHeight: '32px'}}>{wallet.name}</h3>
